@@ -1,0 +1,18 @@
+Assignment: STAT159 HW3 (MyST + GitHub Pages)
+Tool: ChatGPT (OpenAI)
+
+Prompts (summary):
+- How to automatically deploy a MyST site using GitHub Actions
+- How to configure myst.yml, _toc.yml, and index.md
+- How to create a Makefile (env / html / clean)
+- How to structure .gitignore and README templates
+
+Key outputs (summary):
+- .github/workflows/deploy.yml
+- myst.yml, _toc.yml, index.md
+- Makefile (env / html / clean)
+- README with Binder badge and MyST site link
+
+Notes:
+- Added Binder and GitHub Pages links to the repository.
+- Excluded unnecessary files and outputs using .gitignore.
