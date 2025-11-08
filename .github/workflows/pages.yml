@@ -24,6 +24,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -37,7 +39,6 @@ jobs:
         run: |
           myst build --html
           mkdir -p _site
-          # MyST 산출물 위치가 버전에 따라 다를 수 있어, 존재하는 쪽을 복사
           if [ -d "_build/html" ]; then
             cp -r _build/html/* _site/
           elif [ -d "_build" ]; then
